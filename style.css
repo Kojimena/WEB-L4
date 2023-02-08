@@ -1,6 +1,6 @@
 body{
     height: 100vh;
-    background-color: rgb(52, 33, 33);
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,6 +88,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
+    box-sizing: content-box;
   }
 
   .coffee-square-arm {
@@ -123,35 +124,27 @@ body{
 
   .coffee-cup{
   width: 80px;
-  height: 47px;
+  height: 40px;
   background-color: #FFF;
   border-radius: 0 0 70px 70px / 0 0 110px 110px;
-  margin-top: 50px;
+  margin-top: 0px;
   }
 
   .container-cup{
-  background-color: #483e3c;
+  background-color:  #6a5a58;
   width: 200px;
-  height: 100px;
+  height: 150px;
   border-radius: 10% 10% 10% 10% / 10% 10% 0% 0% ;
-  margin-top: 20px;
   display: flex;
+  z-index: 1;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  }
-
-  .coffee-cup-handler{
-    width: 20px;
-    height: 20px;
-    border-radius: 10% 100% 99% 0% / 0% 100% 97% 100% ;
-    border: 4px solid rgb(255, 255, 255);
-    margin-top: 60px;
   }
 
   .coffee-footer {
     width: 270px;
-    height: 15px;
-    bottom: 25px;
+    height: 30px;
     left: calc(50% - 47.5%);
     background-color: #41bdad;
     border-radius: 10px;
@@ -160,14 +153,20 @@ body{
   .coffee-medium-liquid {
     width: 6px;
     height: 60px;
-    left: calc(50% - 3px);
     background-color: #74372b;
-    border-radius: 30% 30% 30% 30% / 0% 0% 100% 100%
+    z-index: 2;  
+  }
+
+  .coffee-medium-liquid.two{
+    width: 6px;
+    height: 60px;
+    background-color: #74372b;
+    z-index: 2;  
   }
 
   .coffee-footer.two{
     width: 280px;
-    height: 50px;
+    height: 40px;
     left: calc(50% - 47.5%);
     background-color: #000000;
     border-radius: 0px;
